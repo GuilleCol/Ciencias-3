@@ -32,7 +32,6 @@ archivo = open("expresionesin.txt", "r")
 lista = archivo.readlines()
 for contenido in lista:
     contenido = contenido.strip("\n")
-    print(contenido.split(" "))
     convertir(contenido.split(" "), pila)
     b = evaluar(pila.desapilar())
     respuestas.append(str(b))
